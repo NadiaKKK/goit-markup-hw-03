@@ -17,6 +17,16 @@ body {
   font-family: Roboto, san-serif;
 }
 
+h1,
+h2,
+h3,
+ul,
+li,
+p {
+  margin: 0;
+ 
+}
+
 /* Лого logo*/
 
 .logo {
@@ -92,12 +102,23 @@ letter-spacing: 0.02em;
   color: var(--accent-color);
 }
 
-.section {
+.container {
 width: 1200px;
 margin-left: auto;
 margin-right: auto;
+padding-left: 15px;
+padding-right: 15px;
 
 outline: 1px solid red;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.work-section {
+    padding-top: 0;
 }
 
 
@@ -109,6 +130,9 @@ outline: 1px solid red;
   text-align: center;
   letter-spacing: 0.03em;
 }
+
+
+
 
 .our-team {
   background-color: #f5f4fa;
@@ -125,11 +149,12 @@ outline: 1px solid red;
 
 /* Hero */
 .hero {
+padding: 200px 0;
+
   color: #ffffff;
   background-color: #2f303a;
   text-align: center;
-  margin-bottom: 95px;
-  
+
 }
 
 .hero-title {
@@ -148,6 +173,7 @@ outline: 1px solid red;
   margin-top: 0;
   margin-bottom: 9.4px;
 
+  display: flex;
 }
 
 .list {
@@ -166,6 +192,7 @@ outline: 1px solid red;
   text-transform: uppercase;
   margin-top: 0;
   
+  margin-bottom: 10px;
 }
 .list .title {
   font-weight: 700;
