@@ -27,6 +27,18 @@ p {
  
 }
 
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 /* Лого logo*/
 
 .logo {
@@ -49,19 +61,39 @@ p {
 
 /* Page header */
 
-.page-header {
-  background-color: tomato;
-}
 
 .container {
-  margin-left: auto;
-  margin-right: auto;
   width: 1200px;
-  
+margin-left: auto;
+margin-right: auto;
+padding-left: 15px;
+padding-right: 15px;
+
+outline: 1px solid red;
 }
 
 /* Site nav & Contacts */
 
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+ }
+
+
+
+.site-nav .item + .item {
+  margin-left: 50px;
+}
 
 .site-nav .contacts {
   font-weight: 500;
@@ -69,13 +101,20 @@ p {
   letter-spacing: 0.02em;
   line-height: 1.14;
 }
+
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: #212121;
+
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
 }
 
 .site-nav .link:hover,
@@ -102,25 +141,30 @@ letter-spacing: 0.02em;
   color: var(--accent-color);
 }
 
-.container {
-width: 1200px;
-margin-left: auto;
-margin-right: auto;
-padding-left: 15px;
-padding-right: 15px;
-
-outline: 1px solid red;
+.contacts {
+  display: flex;
+  margin-left: auto;
 }
+
+.contacts .item + .item {
+  margin-left: 50px;
+}
+
+
 
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
+
+  /* Чем мы занимаемся */
+
+  
+
 .work-section {
     padding-top: 0;
 }
-
 
 .section-title {
   color: var(--secondary-text-color);
@@ -131,14 +175,32 @@ outline: 1px solid red;
   letter-spacing: 0.03em;
 }
 
+.work-examples {
+  display: flex;
+  margin-left: -20px;
+}
 
+.work-img {
+flex-basis: calc((100% - 2*30px) / 3);
+margin-left: 20px;
+}
 
+/* наша команда */
 
 .our-team {
   background-color: #f5f4fa;
 }
 
+.team-members {
+  display: flex;
+  margin-left: -30px;
+  
+}
+
 .team-member {
+flex-basis: calc((100% - 3*30px) / 4);
+margin-right: 30px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -176,10 +238,8 @@ padding: 200px 0;
   display: flex;
 }
 
-.list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+.feature-list .list {
+  width: 270px;
 }
 
 .feature-list-title {
@@ -258,7 +318,14 @@ padding: 200px 0;
   color: var(--secondary-text-color);
 }
 
+/* Фильтр */
+.filter-title {
+  display: flex;
+justify-content: center ;
+}
+
 .filter-title-button {
+
 font-weight: 500;
 font-size: 16px;
 line-height: 1.62;
