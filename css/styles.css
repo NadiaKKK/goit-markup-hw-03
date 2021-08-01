@@ -9,6 +9,11 @@
   --primary-text-color: #757575;
   --secondary-text-color: #212121;
   --accent-color: #2196f3;
+
+  --card-set-gap: 30px;
+
+   --card-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
 body {
@@ -277,6 +282,8 @@ padding: 200px 0;
 }
 
 .subtitle-description {
+   margin-top: 10px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
@@ -319,6 +326,7 @@ padding: 200px 0;
 }
 
 /* Фильтр */
+
 .filter-title {
   display: flex;
 justify-content: center ;
@@ -332,6 +340,35 @@ line-height: 1.62;
 text-align: center;
 letter-spacing: 0.03em;
 }
+.filter-title .item + .item {
+  margin-left: 12px ;
+}
+
+.card {
+
+  box-shadow: var(--card-shadow);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--card-set-gap));
+  margin-top: calc(-1 * var(--card-set-gap));
+}
+
+.card-set > .item {
+ 
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
+}
+
+.card-content {
+  padding: 15px;
+}
+
 
 /* Футер */
 footer {
