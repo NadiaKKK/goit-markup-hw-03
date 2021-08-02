@@ -236,10 +236,12 @@ padding: 200px 0;
 
 /* Features */
 
-.feature-list {
-  margin-top: 0;
-  margin-bottom: 9.4px;
+ul {
+  padding: 0;
+  list-style: none;
+}
 
+.feature-list {
   display: flex;
 }
 
